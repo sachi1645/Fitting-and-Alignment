@@ -338,28 +338,28 @@ INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
-INPUT .\report_assets\q2_ransac.jpg
-INPUT .\report_assets\q2_ransac.jpg
-INPUT .\report_assets\q2_ransac.jpg
-INPUT .\report_assets\q2_ransac.jpg
-INPUT .\report_assets\q2_ransac.jpg
-INPUT .\report_assets\q2_ransac.jpg
-INPUT .\report_assets\q2_ransac.jpg
-INPUT .\report_assets\q3_flag.jpg
-INPUT .\report_assets\q3_flag.jpg
-INPUT .\report_assets\q3_flag.jpg
-INPUT .\report_assets\q3_flag.jpg
-INPUT .\report_assets\q3_flag.jpg
-INPUT .\report_assets\q3_flag.jpg
-INPUT .\report_assets\q3_flag.jpg
+INPUT .\report_assets\q2_ransac.png
+INPUT .\report_assets\q2_ransac.png
+INPUT .\report_assets\q2_ransac.png
+INPUT .\report_assets\q2_ransac.png
+INPUT .\report_assets\q2_ransac.png
+INPUT .\report_assets\q2_ransac.png
+INPUT .\report_assets\q2_ransac.png
+INPUT .\report_assets\q3_flag.png
+INPUT .\report_assets\q3_flag.png
+INPUT .\report_assets\q3_flag.png
+INPUT .\report_assets\q3_flag.png
+INPUT .\report_assets\q3_flag.png
+INPUT .\report_assets\q3_flag.png
+INPUT .\report_assets\q3_flag.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx7.tfm
-INPUT .\report_assets\q3_poster.jpg
-INPUT .\report_assets\q3_poster.jpg
-INPUT .\report_assets\q3_poster.jpg
-INPUT .\report_assets\q3_poster.jpg
-INPUT .\report_assets\q3_poster.jpg
-INPUT .\report_assets\q3_poster.jpg
-INPUT .\report_assets\q3_poster.jpg
+INPUT .\report_assets\q3_poster.png
+INPUT .\report_assets\q3_poster.png
+INPUT .\report_assets\q3_poster.png
+INPUT .\report_assets\q3_poster.png
+INPUT .\report_assets\q3_poster.png
+INPUT .\report_assets\q3_poster.png
+INPUT .\report_assets\q3_poster.png
 INPUT .\report_assets\q4_matches.jpg
 INPUT .\report_assets\q4_matches.jpg
 INPUT .\report_assets\q4_matches.jpg

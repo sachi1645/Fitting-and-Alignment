@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.7.23)  15 OCT 2026 09:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.7.23)  15 OCT 2026 09:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -758,11 +758,11 @@ Package fancyhdr Warning: \headheight is too small (13.0pt):
 [1{C:/Users/dilha/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}
 
 {C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc} <./report_assets/q1_sunflower.jpg>]
-<report_assets/q2_ransac.jpg, id=37, 932.48375pt x 853.1875pt>
-File: report_assets/q2_ransac.jpg Graphic file (type jpg)
-<use report_assets/q2_ransac.jpg>
-Package pdftex.def Info: report_assets/q2_ransac.jpg  used on input line 127.
-(pdftex.def)             Requested size: 300.99803pt x 275.39496pt.
+<report_assets/q2_ransac.png, id=37, 606.6665pt x 556.0775pt>
+File: report_assets/q2_ransac.png Graphic file (type png)
+<use report_assets/q2_ransac.png>
+Package pdftex.def Info: report_assets/q2_ransac.png  used on input line 127.
+(pdftex.def)             Requested size: 300.99803pt x 275.89983pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
@@ -781,21 +781,21 @@ Package fancyhdr Warning: \headheight is too small (13.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-7.39996pt}.
 
-[2 <./report_assets/q2_ransac.jpg>]
+[2 <./report_assets/q2_ransac.png>]
 Overfull \hbox (14.20625pt too wide) in paragraph at lines 177--178
 \T1/lmr/m/n/10 left, top-right, bottom-right, bottom-left. The pro-jec-tive trans-form is com-puted with \T1/lmtt/m/n/10 cv2.getPerspectiveTransform
  []
 
-<report_assets/q3_flag.jpg, id=44, 803.0pt x 602.25pt>
-File: report_assets/q3_flag.jpg Graphic file (type jpg)
-<use report_assets/q3_flag.jpg>
-Package pdftex.def Info: report_assets/q3_flag.jpg  used on input line 183.
-(pdftex.def)             Requested size: 239.31816pt x 179.49094pt.
-<report_assets/q3_poster.jpg, id=45, 803.0pt x 602.25pt>
-File: report_assets/q3_poster.jpg Graphic file (type jpg)
-<use report_assets/q3_poster.jpg>
-Package pdftex.def Info: report_assets/q3_poster.jpg  used on input line 188.
-(pdftex.def)             Requested size: 239.31816pt x 179.49094pt.
+<report_assets/q3_flag.png, id=46, 1027.84pt x 770.88pt>
+File: report_assets/q3_flag.png Graphic file (type png)
+<use report_assets/q3_flag.png>
+Package pdftex.def Info: report_assets/q3_flag.png  used on input line 183.
+(pdftex.def)             Requested size: 239.31816pt x 179.48653pt.
+<report_assets/q3_poster.png, id=47, 1027.84pt x 770.88pt>
+File: report_assets/q3_poster.png Graphic file (type png)
+<use report_assets/q3_poster.png>
+Package pdftex.def Info: report_assets/q3_poster.png  used on input line 188.
+(pdftex.def)             Requested size: 239.31816pt x 179.48653pt.
 
 Package fancyhdr Warning: \headheight is too small (13.0pt): 
 (fancyhdr)                Make it at least 20.39996pt, for example:
@@ -803,12 +803,12 @@ Package fancyhdr Warning: \headheight is too small (13.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-7.39996pt}.
 
-[3 <./report_assets/q3_flag.jpg> <./report_assets/q3_poster.jpg>]
-<report_assets/q4_matches.jpg, id=52, 1010.77625pt x 602.25pt>
+[3 <./report_assets/q3_flag.png (PNG copy)> <./report_assets/q3_poster.png (PNG copy)>]
+<report_assets/q4_matches.jpg, id=54, 4600.18625pt x 2741.24126pt>
 File: report_assets/q4_matches.jpg Graphic file (type jpg)
 <use report_assets/q4_matches.jpg>
 Package pdftex.def Info: report_assets/q4_matches.jpg  used on input line 218.
-(pdftex.def)             Requested size: 212.17511pt x 126.42108pt.
+(pdftex.def)             Requested size: 212.17511pt x 126.40396pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
@@ -820,31 +820,31 @@ Underfull \hbox (badness 10000) in alignment at lines 231--231
 [][][][][] 
  []
 
-<report_assets/q4_heat_1.png, id=53, 330.23375pt x 391.4625pt>
+<report_assets/q4_heat_1.png, id=55, 2310.6325pt x 2740.2375pt>
 File: report_assets/q4_heat_1.png Graphic file (type png)
 <use report_assets/q4_heat_1.png>
 Package pdftex.def Info: report_assets/q4_heat_1.png  used on input line 239.
-(pdftex.def)             Requested size: 84.13037pt x 99.73294pt.
-<report_assets/q4_heat_2.png, id=54, 330.23375pt x 391.4625pt>
+(pdftex.def)             Requested size: 84.08882pt x 99.73294pt.
+<report_assets/q4_heat_2.png, id=56, 2310.6325pt x 2740.2375pt>
 File: report_assets/q4_heat_2.png Graphic file (type png)
 <use report_assets/q4_heat_2.png>
 Package pdftex.def Info: report_assets/q4_heat_2.png  used on input line 243.
-(pdftex.def)             Requested size: 84.13037pt x 99.73294pt.
-<report_assets/q4_heat_3.png, id=55, 330.23375pt x 391.4625pt>
+(pdftex.def)             Requested size: 84.08882pt x 99.73294pt.
+<report_assets/q4_heat_3.png, id=57, 2310.6325pt x 2740.2375pt>
 File: report_assets/q4_heat_3.png Graphic file (type png)
 <use report_assets/q4_heat_3.png>
 Package pdftex.def Info: report_assets/q4_heat_3.png  used on input line 247.
-(pdftex.def)             Requested size: 84.13037pt x 99.73294pt.
-<report_assets/q4_heat_4.png, id=56, 330.23375pt x 391.4625pt>
+(pdftex.def)             Requested size: 84.08882pt x 99.73294pt.
+<report_assets/q4_heat_4.png, id=58, 2310.6325pt x 2740.2375pt>
 File: report_assets/q4_heat_4.png Graphic file (type png)
 <use report_assets/q4_heat_4.png>
 Package pdftex.def Info: report_assets/q4_heat_4.png  used on input line 260.
-(pdftex.def)             Requested size: 84.13037pt x 99.73294pt.
-<report_assets/q4_heat_5.png, id=57, 330.23375pt x 391.4625pt>
+(pdftex.def)             Requested size: 84.08882pt x 99.73294pt.
+<report_assets/q4_heat_5.png, id=59, 2310.6325pt x 2740.2375pt>
 File: report_assets/q4_heat_5.png Graphic file (type png)
 <use report_assets/q4_heat_5.png>
 Package pdftex.def Info: report_assets/q4_heat_5.png  used on input line 260.
-(pdftex.def)             Requested size: 84.13037pt x 99.73294pt.
+(pdftex.def)             Requested size: 84.08882pt x 99.73294pt.
 
 Package fancyhdr Warning: \headheight is too small (13.0pt): 
 (fancyhdr)                Make it at least 20.39996pt, for example:
@@ -869,9 +869,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  84i,12n,94p,727b,1076s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt9.pfb>
-Output written on 230147L_a02.pdf (4 pages, 1558148 bytes).
+Output written on 230147L_a02.pdf (4 pages, 31981396 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
+ 159 PDF objects out of 1000 (max. 8388607)
  13 named destinations out of 1000 (max. 500000)
  63 words of extra memory for PDF output out of 10000 (max. 10000000)
 
