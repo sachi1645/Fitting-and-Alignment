@@ -1,0 +1,13 @@
+Random seed: 0
+Line inliers: 56/100; threshold=1.7; min consensus=35
+Line unit normal: [0.715649, 0.698460], norm=1.000000
+Line d: 1.561775; approximate y=m*x+b: m=-1.024609, b=2.236025
+Line sample points: [[-12.0, 14.20827497807686], [2.6938775510204085, -0.3956393768143525]]
+Circle inliers after line removal: 42; threshold=1.25; min consensus=32
+Circle center: (1.817367, 3.089484); radius=9.888575
+Circle sample points: [[11.05786244234232, 7.334549756511372], [-5.4462458629496355, -3.727311615406169], [-7.81618802610293, 5.423339906701143]]
+Line consensus composition: 50 true-line + 6 true-circle points
+Circle consensus composition: 42 true-circle + 0 true-line points
+Circle-first: 57 circle consensus = 48 true-circle + 9 true-line points
+Circle-first remainder: 43 points; line fit inliers=41 (41 true-line + 0 true-circle)
+Ground truth line: y=-x+2; circle center=(2,3), radius=10
