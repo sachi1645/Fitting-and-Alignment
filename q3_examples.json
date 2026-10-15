@@ -11,6 +11,18 @@
         [530, 420],
         [210, 410]
       ]
+    },
+    {
+      "background": "images/wadham.jpg",
+      "overlay": "images/the_berry_farms_sunflower_field.jpeg",
+      "output": "results/q3/wadham_sunflower.png",
+      "alpha": 0.9,
+      "destination_points": [
+        [100, 120],
+        [380, 130],
+        [390, 360],
+        [90, 350]
+      ]
     }
   ]
 }
