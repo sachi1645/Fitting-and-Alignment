@@ -1,0 +1,27 @@
+Image: images\the_berry_farms_sunflower_field.jpeg
+OpenCV read mode: IMREAD_REDUCED_COLOR_4
+Reduced dimensions: 360 x 360
+Scale range: sigma in [0.5000, 8.0000] reduced-image pixels
+Scales tested: 32 (logarithmically spaced)
+Absolute scale-normalised LoG response threshold: 0.06
+Spatial-scale maximum neighbourhood: 3 scales x 7 x 7 pixels
+ROI: y >= 180 pixels in the reduced image
+Sunflower validation: yellow annulus fraction >= 0.28; ring-minus-centre grayscale >= 8.0
+Raw LoG candidates after NMS: 899
+Validated detections: 271
+Largest circles (x, y, sigma, radius, response, yellow fraction, ring contrast):
+01: x=282, y=338, sigma=7.316, radius=10.346, response=0.34929, yellow=0.684, contrast=67.36
+02: x=79, y=258, sigma=6.690, radius=9.461, response=0.17779, yellow=0.301, contrast=32.88
+03: x=106, y=255, sigma=6.117, radius=8.651, response=0.36181, yellow=0.745, contrast=67.13
+04: x=179, y=327, sigma=6.117, radius=8.651, response=0.34513, yellow=0.644, contrast=73.80
+05: x=178, y=261, sigma=5.594, radius=7.911, response=0.35270, yellow=0.655, contrast=57.91
+06: x=339, y=206, sigma=5.594, radius=7.911, response=0.09830, yellow=0.589, contrast=24.48
+07: x=29, y=272, sigma=5.115, radius=7.234, response=0.15105, yellow=0.284, contrast=31.36
+08: x=189, y=240, sigma=4.678, radius=6.615, response=0.36240, yellow=0.621, contrast=73.35
+09: x=274, y=258, sigma=4.678, radius=6.615, response=0.34624, yellow=0.677, contrast=54.82
+10: x=294, y=255, sigma=4.678, radius=6.615, response=0.13075, yellow=0.345, contrast=23.81
+11: x=161, y=290, sigma=4.278, radius=6.049, response=0.36631, yellow=0.528, contrast=61.00
+12: x=63, y=243, sigma=4.278, radius=6.049, response=0.35768, yellow=0.449, contrast=54.32
+13: x=70, y=286, sigma=4.278, radius=6.049, response=0.35438, yellow=0.642, contrast=68.43
+14: x=19, y=250, sigma=4.278, radius=6.049, response=0.29196, yellow=0.642, contrast=54.14
+15: x=103, y=222, sigma=4.278, radius=6.049, response=0.18196, yellow=0.392, contrast=24.09
