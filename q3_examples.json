@@ -1,0 +1,16 @@
+{
+  "examples": [
+    {
+      "background": "images/wadham.jpg",
+      "overlay": "images/flag.png",
+      "output": "results/q3/wadham_flag.png",
+      "alpha": 0.95,
+      "destination_points": [
+        [220, 140],
+        [520, 150],
+        [530, 420],
+        [210, 410]
+      ]
+    }
+  ]
+}
