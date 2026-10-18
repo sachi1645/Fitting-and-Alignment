@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.7.23)  18 OCT 2026 08:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.7.23)  18 OCT 2026 09:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -605,7 +605,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
  [1{C:/Users/dilha/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}
 
 {C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
-<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q1_sunflower.jpg, id=111, 361.35pt x 361.35pt>
+<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q1_sunflower.jpg, id=107, 361.35pt x 361.35pt>
 File: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q1_sunflower.jpg Graphic file (type jpg)
 <use C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q1_sunflower.jpg>
 Package pdftex.def Info: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q1_sunflower.jpg  used on input line 74.
@@ -620,57 +620,57 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [3]
-<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q2_ransac.png, id=129, 606.6665pt x 556.0775pt>
-File: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q2_ransac.png Graphic file (type png)
-<use C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q2_ransac.png>
-Package pdftex.def Info: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q2_ransac.png  used on input line 129.
-(pdftex.def)             Requested size: 397.55762pt x 364.40738pt.
- [4 <C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q2_ransac.png>]
-<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_flag.png, id=141, 1027.84pt x 770.88pt>
-File: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_flag.png Graphic file (type png)
-<use C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_flag.png>
-Package pdftex.def Info: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_flag.png  used on input line 172.
+<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q2_ransac.jpg, id=125, 1516.66624pt x 1390.19376pt>
+File: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q2_ransac.jpg Graphic file (type jpg)
+<use C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q2_ransac.jpg>
+Package pdftex.def Info: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q2_ransac.jpg  used on input line 129.
+(pdftex.def)             Requested size: 397.55762pt x 364.39041pt.
+ [4 <C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q2_ransac.jpg>]
+<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_flag.jpg, id=135, 1027.84pt x 770.88pt>
+File: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_flag.jpg Graphic file (type jpg)
+<use C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_flag.jpg>
+Package pdftex.def Info: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_flag.jpg  used on input line 172.
 (pdftex.def)             Requested size: 234.7048pt x 176.0283pt.
-<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_poster.png, id=142, 1027.84pt x 770.88pt>
-File: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_poster.png Graphic file (type png)
-<use C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_poster.png>
-Package pdftex.def Info: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_poster.png  used on input line 176.
+<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_poster.jpg, id=136, 1027.84pt x 770.88pt>
+File: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_poster.jpg Graphic file (type jpg)
+<use C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_poster.jpg>
+Package pdftex.def Info: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_poster.jpg  used on input line 176.
 (pdftex.def)             Requested size: 234.7048pt x 176.0283pt.
  [5] (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
-) [6 <C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_flag.png (PNG copy)> <C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_poster.png (PNG copy)>]
-<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_matches.jpg, id=161, 4600.18625pt x 2741.24126pt>
+) [6 <C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_flag.jpg> <C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q3_poster.jpg>]
+<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_matches.jpg, id=155, 4600.18625pt x 2741.24126pt>
 File: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_matches.jpg Graphic file (type jpg)
 <use C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_matches.jpg>
 Package pdftex.def Info: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_matches.jpg  used on input line 236.
 (pdftex.def)             Requested size: 364.02524pt x 216.91959pt.
  [7]
-<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_1.png, id=181, 2310.6325pt x 2740.2375pt>
-File: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_1.png Graphic file (type png)
-<use C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_1.png>
-Package pdftex.def Info: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_1.png  used on input line 241.
+<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_1.jpg, id=175, 2310.6325pt x 2740.2375pt>
+File: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_1.jpg Graphic file (type jpg)
+<use C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_1.jpg>
+Package pdftex.def Info: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_1.jpg  used on input line 241.
 (pdftex.def)             Requested size: 143.18016pt x 169.80098pt.
-<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_2.png, id=182, 2310.6325pt x 2740.2375pt>
-File: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_2.png Graphic file (type png)
-<use C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_2.png>
-Package pdftex.def Info: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_2.png  used on input line 242.
+<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_2.jpg, id=176, 2310.6325pt x 2740.2375pt>
+File: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_2.jpg Graphic file (type jpg)
+<use C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_2.jpg>
+Package pdftex.def Info: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_2.jpg  used on input line 242.
 (pdftex.def)             Requested size: 143.18016pt x 169.80098pt.
-<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_3.png, id=183, 2310.6325pt x 2740.2375pt>
-File: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_3.png Graphic file (type png)
-<use C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_3.png>
-Package pdftex.def Info: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_3.png  used on input line 243.
+<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_3.jpg, id=177, 2310.6325pt x 2740.2375pt>
+File: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_3.jpg Graphic file (type jpg)
+<use C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_3.jpg>
+Package pdftex.def Info: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_3.jpg  used on input line 243.
 (pdftex.def)             Requested size: 143.18016pt x 169.80098pt.
-<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_4.png, id=184, 2310.6325pt x 2740.2375pt>
-File: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_4.png Graphic file (type png)
-<use C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_4.png>
-Package pdftex.def Info: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_4.png  used on input line 244.
+<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_4.jpg, id=178, 2310.6325pt x 2740.2375pt>
+File: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_4.jpg Graphic file (type jpg)
+<use C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_4.jpg>
+Package pdftex.def Info: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_4.jpg  used on input line 244.
 (pdftex.def)             Requested size: 143.18016pt x 169.80098pt.
-<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_5.png, id=185, 2310.6325pt x 2740.2375pt>
-File: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_5.png Graphic file (type png)
-<use C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_5.png>
-Package pdftex.def Info: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_5.png  used on input line 245.
+<C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_5.jpg, id=179, 2310.6325pt x 2740.2375pt>
+File: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_5.jpg Graphic file (type jpg)
+<use C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_5.jpg>
+Package pdftex.def Info: C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_5.jpg  used on input line 245.
 (pdftex.def)             Requested size: 143.18016pt x 169.80098pt.
- [8 <C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_matches.jpg> <C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_1.png (PNG copy)> <C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_2.png (PNG copy)> <C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_3.png (PNG copy)> <C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_4.png (PNG copy)> <C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_5.png (PNG copy)>] [9] 
+ [8 <C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_matches.jpg> <C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_1.jpg> <C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_2.jpg> <C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_3.jpg> <C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_4.jpg> <C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/q4_heat_5.jpg>] [9] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (230147L_a02.aux)
  ***********
@@ -678,20 +678,20 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `230147L_a02.out' has not changed.
-(rerunfilecheck)             Checksum: 68CD1FB14925306BD84621BF4127D5E3;5753.
+(rerunfilecheck)             Checksum: 9BC07BEC78C693B3D27F25855C6314D4;5434.
  ) 
 Here is how much of TeX's memory you used:
- 17622 strings out of 467871
- 279716 string characters out of 5428443
- 968723 words of memory out of 5000000
- 45956 multiletter control sequences out of 15000+600000
- 742186 words of font info for 222 fonts, out of 8000000 for 9000
+ 17616 strings out of 467871
+ 279644 string characters out of 5428443
+ 968715 words of memory out of 5000000
+ 45955 multiletter control sequences out of 15000+600000
+ 741973 words of font info for 220 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,15n,79p,1059b,1365s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtti10.pfb>
-Output written on 230147L_a02.pdf (9 pages, 32003061 bytes).
+Output written on 230147L_a02.pdf (9 pages, 12508828 bytes).
 PDF statistics:
- 297 PDF objects out of 1000 (max. 8388607)
- 59 named destinations out of 1000 (max. 500000)
- 67291 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 291 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
+ 67283 words of extra memory for PDF output out of 74296 (max. 10000000)
 

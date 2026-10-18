@@ -126,7 +126,7 @@ followed by inlier reassignment and one further refinement. This is different fr
 
 \subsection{(c) Results, samples and fitted models}
 \begin{figure}[H]\centering
-\includegraphics[width=0.83\linewidth]{\assets q2_ransac.png}
+\includegraphics[width=0.83\linewidth]{\assets q2_ransac.jpg}
 \caption{Reproduced plot of all 100 points, the best minimal line and circle samples, corresponding sample models, final refined models, model inliers and ground-truth line/circle.}
 \end{figure}
 
@@ -169,11 +169,11 @@ while pixels outside the valid warped mask $\Omega$ remain unchanged. The tested
 \subsection{Reported experiments}
 \begin{figure}[H]\centering
 \begin{subfigure}[t]{0.49\textwidth}\centering
-\includegraphics[width=\linewidth]{\assets q3_flag.png}
+\includegraphics[width=\linewidth]{\assets q3_flag.jpg}
 \caption{Union Jack over the Wadham College facade.}
 \end{subfigure}\hfill
 \begin{subfigure}[t]{0.49\textwidth}\centering
-\includegraphics[width=\linewidth]{\assets q3_poster.png}
+\includegraphics[width=\linewidth]{\assets q3_poster.jpg}
 \caption{Sunflower photograph placed on the same facade.}
 \end{subfigure}
 \end{figure}
@@ -238,11 +238,11 @@ AECC4 & 3830 & 3402 & $88.8\%$ & 4.0 & 10\\
 \end{figure}
 
 \begin{figure}[H]\centering
-\begin{subfigure}[t]{0.31\textwidth}\centering\includegraphics[width=\linewidth,height=2.35in,keepaspectratio]{\assets q4_heat_1.png}\caption{AAAA1}\end{subfigure}\hfill
-\begin{subfigure}[t]{0.31\textwidth}\centering\includegraphics[width=\linewidth,height=2.35in,keepaspectratio]{\assets q4_heat_2.png}\caption{ADAD1}\end{subfigure}\hfill
-\begin{subfigure}[t]{0.31\textwidth}\centering\includegraphics[width=\linewidth,height=2.35in,keepaspectratio]{\assets q4_heat_3.png}\caption{AECC2}\end{subfigure}\\[12pt]
-\begin{subfigure}[t]{0.31\textwidth}\centering\includegraphics[width=\linewidth,height=2.35in,keepaspectratio]{\assets q4_heat_4.png}\caption{AECC3}\end{subfigure}\hspace{0.02\textwidth}
-\begin{subfigure}[t]{0.31\textwidth}\centering\includegraphics[width=\linewidth,height=2.35in,keepaspectratio]{\assets q4_heat_5.png}\caption{AECC4}\end{subfigure}
+\begin{subfigure}[t]{0.31\textwidth}\centering\includegraphics[width=\linewidth,height=2.35in,keepaspectratio]{\assets q4_heat_1.jpg}\caption{AAAA1}\end{subfigure}\hfill
+\begin{subfigure}[t]{0.31\textwidth}\centering\includegraphics[width=\linewidth,height=2.35in,keepaspectratio]{\assets q4_heat_2.jpg}\caption{ADAD1}\end{subfigure}\hfill
+\begin{subfigure}[t]{0.31\textwidth}\centering\includegraphics[width=\linewidth,height=2.35in,keepaspectratio]{\assets q4_heat_3.jpg}\caption{AECC2}\end{subfigure}\\[12pt]
+\begin{subfigure}[t]{0.31\textwidth}\centering\includegraphics[width=\linewidth,height=2.35in,keepaspectratio]{\assets q4_heat_4.jpg}\caption{AECC3}\end{subfigure}\hspace{0.02\textwidth}
+\begin{subfigure}[t]{0.31\textwidth}\centering\includegraphics[width=\linewidth,height=2.35in,keepaspectratio]{\assets q4_heat_5.jpg}\caption{AECC4}\end{subfigure}
 \caption{Difference heatmaps for each test image.}
 \end{figure}
 
@@ -252,8 +252,5 @@ AECC4 & 3830 & 3402 & $88.8\%$ & 4.0 & 10\\
 \textbf{AAAA1 and ADAD1:} Their lower inlier fractions (35.3\% and 52.6\%) and markedly higher mean differences (28.8 and 31.2) show that they are substantially less similar to the template under this procedure. Such differences could reflect a different PCB revision or component placement, weaker geometric registration, or capture/illumination differences. In particular, 18 inliers for AAAA1 is a relatively small geometric support set, so its transformation should be inspected for plausibility before interpreting bright areas as true hardware changes.
 
 \textbf{Why do USB Type-B connectors, capacitors and reset buttons show high differences?} A homography models a single plane, approximately the board surface. Tall parts sit above that plane; viewing-angle differences create parallax, leaving those parts locally misregistered after the board plane is aligned. Connector and capacitor geometry may genuinely vary between boards or revisions; highlights and shadows from raised components are also illumination-sensitive. Therefore, high local error can represent real hardware differences \emph{or} unavoidable geometric/photometric mismatch, not automatically defects.
-
-\subsection{How to improve the reliability of the experiment}
-For each of the five test boards, add a three-column figure showing \emph{template}, \emph{aligned test image}, and \emph{difference}, with a separate close-up of a suspected component. Include the inlier-match panel, the estimated overlap percentage, and a consistent shared intensity scale for heatmaps. The current code draws only the 75 lowest-distance inlier matches in its preview, even when there are thousands of matches. For quantitative board-to-board comparison, use a PCB region-of-interest mask so background colours do not dominate the mean, and consider photometric normalisation before differencing. These are recommended further experiments; their results are not claimed in this report.
 
 \end{document}
