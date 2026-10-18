@@ -1,265 +1,259 @@
-% EN3160 Assignment 2 - compact report styled after the supplied reference .tex
-\documentclass[9pt,a4paper]{article}
-
-\usepackage[a4paper,left=0.72in,right=0.72in,top=0.68in,bottom=0.72in]{geometry}
+% EN3160 Assignment 2 -- expanded review edition.
+% Figure assets were extracted from the supplied report PDF. Numerical
+% Q1/Q4 results are transcribed from that PDF, not independently recomputed.
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,margin=0.82in,top=0.91in,bottom=0.87in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\usepackage{graphicx}
-\usepackage{float}
-\usepackage{booktabs}
-\usepackage{tabularx}
-\usepackage{array}
-\usepackage{amsmath,amssymb}
-\usepackage{enumitem}
-\usepackage{caption}
-\usepackage{subcaption}
-\usepackage{setspace}
-\usepackage{titlesec}
-\usepackage{fancyhdr}
-\usepackage{url}
-\usepackage{xcolor}
-\usepackage{hyperref}
-\usepackage{tikz}
-\usepackage{listings}
-
+\usepackage{graphicx,amsmath,amssymb,booktabs,tabularx,array,float,subcaption}
+\usepackage{xcolor,hyperref,fancyhdr,lastpage,enumitem,listings,caption}
+\usepackage{microtype}
 \definecolor{navy}{HTML}{17324D}
-\definecolor{blue}{HTML}{2F6B97}
-\definecolor{pale}{HTML}{F1F5F8}
-\definecolor{muted}{HTML}{5D6B76}
-\definecolor{grid}{HTML}{D3DEE7}
-
-% Edit these three fields if your submission details differ.
-\newcommand{\StudentName}{Dilhara D.S.}
-\newcommand{\IndexNumber}{230147L}
-\newcommand{\GitHubProfile}{https://github.com/sachi1645/Fitting-and-Alignment}
-\input{report_data.tex}
-
-\hypersetup{colorlinks=true,linkcolor=navy,urlcolor=blue,pdftitle={EN3160 Assignment 2 - Fitting and Alignment},pdfauthor={\StudentName}}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0.25em}
-\setstretch{1.02}
-\setlength{\tabcolsep}{3.4pt}
-\renewcommand{\arraystretch}{1.14}
-\captionsetup{font=footnotesize,labelfont=bf,justification=centering,skip=3pt}
-\titleformat{\section}{\normalfont\bfseries\large\color{navy}}{\thesection}{0.6em}{}
-\titlespacing*{\section}{0pt}{5pt}{2pt}
-\titleformat{\subsection}{\normalfont\bfseries\normalsize\color{blue}}{\thesubsection}{0.6em}{}
-\titlespacing*{\subsection}{0pt}{4pt}{1pt}
-\lstset{basicstyle=\ttfamily\scriptsize,backgroundcolor=\color{pale},frame=single,rulecolor=\color{grid},breaklines=true,columns=fullflexible,xleftmargin=4pt,xrightmargin=4pt,aboveskip=3pt,belowskip=3pt}
-
-% Draw the page frame at shipout so it stays outside the text/footer area.
-\AddToHook{shipout/background}{%
-  \begin{tikzpicture}[remember picture,overlay]
-    \draw[line width=0.45pt,color=black!75]
-      ([xshift=0.25cm,yshift=-0.25cm]current page.north west)
-      rectangle
-      ([xshift=-0.25cm,yshift=0.25cm]current page.south east);
-  \end{tikzpicture}%
-}
-
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[L]{\textcolor{navy}{\small\bfseries University of Moratuwa | EN3160}}
-\fancyhead[R]{\textcolor{muted}{\small Assignment 2}}
-\renewcommand{\headrulewidth}{0.35pt}
-\renewcommand{\headrule}{\hbox to\headwidth{\color{grid}\leaders\hrule height \headrulewidth\hfill}}
-\fancyfoot[L]{\textcolor{muted}{\scriptsize\StudentName\ | \IndexNumber}}
-\fancyfoot[R]{\textcolor{muted}{\scriptsize Page \thepage\ of 4}}
-\renewcommand{\footrulewidth}{0pt}
-\setlength{\headheight}{13pt}
-
+\definecolor{muted}{HTML}{485C6D}
+\definecolor{pale}{HTML}{F2F6FA}
+\hypersetup{colorlinks=true,urlcolor=navy,linkcolor=navy,pdftitle={EN3160 Assignment 2}}
+\newcommand{\assets}{C:/Users/dilha/Desktop/Fitting-and-Alignment/latex/report_assets/}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\bfseries\color{navy}University of Moratuwa $|$ EN3160}
+\fancyhead[R]{\small Assignment 2}
+\fancyfoot[L]{\scriptsize Dilhara D.S. $|$ 230147L}
+\fancyfoot[R]{\scriptsize Page \thepage\ of \pageref{LastPage}}
+\setlength{\headheight}{14pt}
+\renewcommand{\headrulewidth}{0.4pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{0.44em}
+\setlength{\emergencystretch}{2em}
+\captionsetup{font=small,labelfont=bf}
+\lstset{basicstyle=\small\ttfamily,frame=single,backgroundcolor=\color{pale},breaklines=true,columns=fullflexible,aboveskip=6pt,belowskip=6pt}
 \begin{document}
-
-% PAGE 1 -------------------------------------------------------------------
 \begin{center}
-{\Large\bfseries\color{navy} EN3160 -- Fitting and Alignment}\par
-{\large\bfseries Assignment 2 Report}\par
-{\small Student: \StudentName \quad | \quad Index: \IndexNumber \quad | \quad GitHub: \href{\GitHubProfile}{\texttt{github.com/sachi1645/Fitting-and-Alignment}}}
+{\LARGE\bfseries\color{navy}EN3160 -- Fitting and Alignment}\\[5pt]
+{\Large Assignment 2: Expanded Technical Report}\\[7pt]
+\textbf{Student:} Dilhara D.S. \quad \textbf{Index:} 230147L\\
+\textbf{Repository:} \url{https://github.com/sachi1645/Fitting-and-Alignment}
 \end{center}
-\vspace{-2pt}\hrule\vspace{4pt}
+\hrule\vspace{9pt}
 
-\section*{1. Laplacian-of-Gaussian blob detection}
-The supplied sunflower photograph is loaded with \texttt{cv2.IMREAD\_REDUCED\_COLOR\_4}, giving a $360\times360$ image. For each Gaussian scale, the detector evaluates the absolute scale-normalised Laplacian,
-\[
-L(x,y,\sigma)=\left|\sigma^2\nabla^2(G_\sigma * I)(x,y)\right|,\qquad r\approx\sqrt{2}\,\sigma.
-\]
-Local maxima are extracted in the spatial-scale response stack and duplicate scale-space candidates are suppressed. To focus on sunflower heads rather than leaves and tree texture, candidates are restricted to $y\ge\QOneRoi$ and validated by the yellow-petal fraction and grayscale contrast of an annulus around a darker centre. No \texttt{cv2.HoughCircles} call is used.
 
-\textbf{Selected parameters.} \QOneScaleCount\ logarithmically spaced scales, $\sigma=\QOneSigmaRange$ reduced-image pixels; response threshold $\QOneThreshold$; spatial neighbourhood $\QOneWindow$; yellow annulus fraction $\ge\QOneYellowFraction$; ring-minus-centre grayscale contrast $\ge\QOneContrast$. The output draws every validated detection, not just the largest few.
+\section{Question 1: Scale-normalised Laplacian-of-Gaussian blob detection}
+\subsection{Objective and theory}
+The task is to detect approximately circular structures in the supplied sunflower field image using Laplacian-of-Gaussian (LoG) filtering and scale-space extrema, \emph{without} the Hough-circle detector. The image is loaded through \texttt{cv2.IMREAD\_REDUCED\_COLOR\_4}; the reported dimensions after decoding are $360\times360$ pixels. Pixel coordinates and reported radii below refer to this downsampled image.
 
-\vspace{1pt}
-\begin{minipage}[t]{0.51\textwidth}
-\vspace{0pt}
-\includegraphics[width=\linewidth]{report_assets/q1_sunflower.jpg}
-\captionof{figure}{LoG detections over the course sunflower image. All \QOneDetectionCount\ validated candidates are drawn.}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.46\textwidth}
-\vspace{0pt}
-\textbf{Largest detected circles}\par
-\small Centres and radii use reduced-image pixels; multiply by four to convert to original-image coordinates.
-\vspace{2pt}
-{\scriptsize
-\begin{tabularx}{\linewidth}{@{}r r r r r >{\raggedleft\arraybackslash}X@{}}
-\toprule
-\# & $x$ & $y$ & $\sigma$ & radius & resp.\\
-\midrule
-\QOneLargestRows
-\bottomrule
-\end{tabularx}}
-\vspace{3pt}
-\textbf{Interpretation.} Extending the scale range down to $0.5$ px recovers smaller flower heads that were missed by the original $1.3$ px lower limit. Colour/contrast validation rejects many foliage responses. The detector still finds candidate blobs rather than semantically segmenting every flower: occlusion, overlapping heads, shadows and similar leaf texture can cause misses or false positives.
-\end{minipage}
+Let $I(x,y)$ denote its grayscale intensity and $G_\sigma$ a two-dimensional Gaussian kernel. The scale-normalised LoG response used in the implementation is
+\begin{equation}
+R(x,y,\sigma)=\left|\sigma^{2}\nabla^{2}\bigl(G_{\sigma}*I\bigr)(x,y)\right|.
+\label{eq:log}
+\end{equation}
+The $\sigma^{2}$ factor supports comparisons across scales; the absolute value includes responses of either polarity. For an ideal blob, the associated characteristic circle radius is approximated by
+\begin{equation}
+  r\simeq\sqrt{2}\,\sigma.
+\label{eq:blob_radius}
+\end{equation}
+This is a \emph{scale-derived characteristic radius}, not a geometric measurement of the exact flower-petal boundary. In particular, a dark flower centre surrounded by bright petals may yield a blob radius nearer the central disc than the full blossom diameter.
 
-\vspace{2pt}
-\begin{lstlisting}
-response = abs(sigma**2 * gaussian_laplace(gray, sigma))
-peaks = local maxima in the spatial-scale response stack
-radius = sqrt(2) * sigma
-\end{lstlisting}
+\subsection{Method and parameter selection}
+The script evaluates 32 geometrically spaced Gaussian scales from $\sigma=0.5$ to $8.0$ reduced-image pixels. A candidate is retained if its absolute response is a local maximum in a $3\times7\times7$ scale--row--column neighbourhood and is at least $0.06$. The detector rejects endpoints of the scale grid because a symmetric scale comparison is not possible there. Consequently the \emph{tested} range is $[0.5,8.0]$ px but the \emph{eligible interior} extrema are approximately $\sigma\in[0.547,7.316]$ px, corresponding to characteristic radii of roughly $0.773$--$10.346$ px.
 
-% PAGE 2 -------------------------------------------------------------------
-\newpage
-\section*{2. RANSAC line and circle fitting}
-Listing 1 is reproduced with a fixed random seed and 100 points: 50 noisy circle points with ground truth centre $(2,3)$ and radius $10$ (radial noise standard deviation $0.625$), and 50 noisy line points from $y=-x+2$ (vertical noise standard deviation $1$). The hand-coded RANSAC line model uses a unit normal $[a,b]^T$ and perpendicular distance residuals. Its consensus is refitted using total least squares; those inliers are removed before circle RANSAC uses three-point samples and minimises radial residuals on the consensus.
+Detected centres are constrained to $y\ge180$ to exclude sky and much of the tree line. Candidate circles touching image boundaries are excluded. A post-processing step further requires that an annulus near the candidate contains at least $28\%$ yellow pixels and that the average intensity of the annulus exceeds the central intensity by at least 8 grayscale levels. Non-maximum suppression also removes nearby, similarly scaled detections.
 
-\begin{minipage}[t]{0.61\textwidth}
-\vspace{0pt}
-\includegraphics[width=\linewidth]{report_assets/q2_ransac.png}
-\captionof{figure}{Point set, ground-truth and fitted models, selected minimal samples and consensus sets.}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.36\textwidth}
-\vspace{0pt}
-\textbf{RANSAC settings}\par
-\small
-\begin{tabularx}{\linewidth}{@{}lX@{}}
-\toprule
-Line & 2,500 iterations; threshold $1.7$; minimum consensus $35$\\
-Circle & 4,500 iterations; threshold $1.25$; minimum consensus $32$\\
-\bottomrule
-\end{tabularx}
-\vspace{4pt}
-\textbf{Estimated models}\par
-\begin{tabularx}{\linewidth}{@{}lX@{}}
-\toprule
-Line normal & $(\QTwoLineNormal)$\\
-Normal norm & $\QTwoLineNorm$\\
-Line $d$ & $\QTwoLineD$\\
-Line $y=mx+b$ & $m=\QTwoLineSlope$, $b=\QTwoLineIntercept$\\
-Circle centre & $(\QTwoCircleCenter)$\\
-Radius & $\QTwoCircleRadius$\\
-\bottomrule
-\end{tabularx}
-\end{minipage}
+\begin{table}[H]\centering
+\caption{Question 1 algorithm parameters. Thresholds are empirical choices, not theoretically universal constants.}
+\begin{tabular}{@{}ll@{}}\toprule
+Image decoding & Reduced-colour image, $1/4$ linear resolution\\
+Gaussian scales & 32, logarithmically spaced from $0.5$ to $8.0$ px\\
+LoG response threshold & $0.06$ after intensity normalisation to $[0,1]$\\
+Extremum neighbourhood & $3$ scales by $7\times7$ pixels\\
+Region of interest & $y\ge180$ in reduced-image coordinates\\
+Yellow fraction in annulus & At least $0.28$\\
+Annulus minus centre intensity & At least $8$ gray levels\\
+Geometric radius & $r=\sqrt{2}\,\sigma$\\
+\bottomrule\end{tabular}
+\end{table}
 
-\vspace{4pt}
-\textbf{Ground truth versus estimate}
-\begin{center}
-\small
-\begin{tabular}{@{}lll@{}}
-\toprule
-Parameter & Ground truth & Estimate\\
-\midrule
-Line slope & $-1.0000$ & $\QTwoLineSlope$\\
-Line intercept & $2.0000$ & $\QTwoLineIntercept$\\
-Circle centre & $(2,3)$ & $(\QTwoCircleCenter)$\\
-Circle radius & $10.0000$ & $\QTwoCircleRadius$\\
-\bottomrule
-\end{tabular}
-\end{center}
+\subsection{Detection output and largest candidate circles}
+\begin{figure}[H]\centering
+\includegraphics[width=0.61\linewidth]{\assets q1_sunflower.jpg}
+\caption{Sunflower photograph with LoG-derived candidate circles.}\end{figure}
 
-\textbf{Consensus and interpretation.} The line-first fit returns \QTwoLineInliers\ line inliers (\QTwoLineComposition). After removing them, the circle fit returns \QTwoCircleInliers\ circle inliers (\QTwoCircleComposition). The estimated circle centre is approximately $0.204$ units from the true centre and the radius error is approximately $0.111$. The fitted line is close to the ground truth; residual differences arise from noise and random sampling.
+\begin{table}[H]\centering
+\caption{Eight largest reported candidates, ordered by estimated radius. Positions and radii are in reduced-image pixels.}
+\begin{tabular}{@{}rrrrrr@{}}\toprule
+Rank & Centre $x$ & Centre $y$ & $\sigma$ (px) & $r$ (px) & LoG response\\\midrule
+1 & 282 & 338 & 7.32 & 10.35 & 0.349\\
+2 & 79  & 258 & 6.69 & 9.46 & 0.178\\
+3 & 106 & 255 & 6.12 & 8.65 & 0.362\\
+4 & 179 & 327 & 6.12 & 8.65 & 0.345\\
+5 & 178 & 261 & 5.59 & 7.91 & 0.353\\
+6 & 339 & 206 & 5.59 & 7.91 & 0.098\\
+7 & 29  & 272 & 5.12 & 7.23 & 0.151\\
+8 & 189 & 240 & 4.68 & 6.62 & 0.362\\
+\bottomrule\end{tabular}
+\end{table}
 
-\textbf{(d) If the circle is fitted first.} Circle-first RANSAC returns \QTwoCircleFirst. The remaining 43 points then yield \QTwoCircleFirstLineInliers\ true-line inliers. Therefore, model order changes the assignment of ambiguous points: the circle can absorb points from the line before the line fit ever sees them. Sequential RANSAC is effective here because the selected line consensus is removed before estimating the circle.
+For example, candidate 1 has $\sigma\simeq7.32$ px and hence $r\simeq\sqrt{2}(7.32)=10.35$ px; expressed in original-image pixels, its approximate centre is $(1128,1352)$ and radius is $41.4$ px (assuming exactly fourfold downsampling). The displayed centres are in image coordinate order $(x,y)$, with $y$ increasing downwards.
 
-% PAGE 3 -------------------------------------------------------------------
-\newpage
-\section*{3. Homography and perspective overlay}
-A homography projects a planar overlay into a four-corner quadrilateral in the background. For each example, source corners are the overlay image corners; destination points are clicked or specified in the clockwise order top-left, top-right, bottom-right, bottom-left. The projective transform is computed with \texttt{cv2.getPerspectiveTransform} and applied with \texttt{cv2.warpPerspective}. A warped validity mask limits blending to the overlay area so unfilled pixels do not blacken the background.
+\subsection{Interpretation and limitations}
+The results establish that the method detects candidate circular dark-centre/bright-ring structures within the flower field and avoids the prohibited Hough-circle method. The reported count of 271 is a count of \emph{validated candidates}, not a verified count of individual sunflowers. Small overlapping flowers may be missed; colour thresholds can reject shadowed or pale flowers, and background texture can cause false positives. Since the upper-scale endpoint is excluded, large objects beyond about 10.35 reduced-image pixels in characteristic radius can also be missed.
 
-\begin{figure}[H]
-\centering
-\begin{subfigure}[t]{0.485\textwidth}
-\centering
-\includegraphics[width=\linewidth]{report_assets/q3_flag.png}
-\caption{Union Jack on the Wadham College facade.}
-\end{subfigure}\hfill
-\begin{subfigure}[t]{0.485\textwidth}
-\centering
-\includegraphics[width=\linewidth]{report_assets/q3_poster.png}
-\caption{Sunflower image placed as a small poster.}
-\end{subfigure}
-\caption{Two overlays warped onto planar regions in the same supplied architecture image.}
+A more defensible accuracy study would annotate a small representative subset of flowers, match candidate centres to those annotations, and report precision and recall. Showing only the 15--30 largest detections as a second clean figure would help assess whether the largest reported circles actually correspond to flower heads. The earlier report's claim that a 0.5-px lower limit \emph{recovers} flowers missed by an earlier 1.3-px experiment should not be treated as demonstrated without a matched before/after comparison.
+
+\section{Question 2: Sequential RANSAC line and circle fitting}
+\subsection{Synthetic data and ground truth}
+The supplied task specifies a noisy mixed point set with $N=100$ samples: 50 points generated near a circle with ground-truth centre $\mathbf{c}_{\rm gt}=(2,3)$, radius $r_{\rm gt}=10$, and independent radial noise of standard deviation $10/16=0.625$; and 50 points generated along $y=-x+2$ with vertical Gaussian noise of standard deviation $1$. The reviewed code uses random seed 0 for reproducible data generation.
+
+\subsection{(a) Line RANSAC with a unit normal}
+Write the line in normal form,
+\begin{equation}
+  a x+b y=d, \qquad a^2+b^2=1.
+\end{equation}
+Two distinct sampled points $\mathbf{p}_1=(x_1,y_1)$ and $\mathbf{p}_2=(x_2,y_2)$ define tangent $\mathbf{t}=(\mathbf{p}_2-\mathbf{p}_1)/\|\mathbf{p}_2-\mathbf{p}_1\|$. A unit normal is $\mathbf{n}=(-t_y,t_x)$, with $d=\mathbf{n}^{\mathsf T}\mathbf{p}_1$. The appropriate error to minimise or threshold is the \emph{perpendicular} distance
+\begin{equation}
+  e_i^{\rm line}=|a x_i+b y_i-d|,
+\end{equation}
+which requires no additional denominator because $\|\mathbf{n}\|_2=1$. The implementation performs 2,500 two-point random trials, accepts residuals up to 1.7 units, and requires at least 35 inliers. It selects the hypothesis with the largest consensus (breaking count ties by total inlier squared error), then refits the line on that set by total least squares (SVD).
+
+For perspective, the generator's line noise is vertical with standard deviation $1$, but its perpendicular component relative to a slope-$-1$ line is $1/\sqrt{2}\approx0.707$. A 1.7-unit perpendicular threshold is therefore approximately $2.40$ times that nominal inlier-noise scale. The \emph{minimum consensus of 35} is a design heuristic; it is not the observed line-inlier count.
+
+\subsection{(b) Circle RANSAC on the remaining points}
+After removing the estimated line consensus, each RANSAC trial samples three non-collinear points. The three-point circle hypothesis has centre $\mathbf{c}=(c_x,c_y)$ and radius $r>0$. The radial residual is
+\begin{equation}
+  e_i^{\rm circ}=\left|\sqrt{(x_i-c_x)^2+(y_i-c_y)^2}-r\right|.
+\end{equation}
+The code runs 4,500 circle trials, applies radial threshold $1.25$, and requires at least 32 consensus points. The threshold is twice the generator's nominal circle radial-noise standard deviation ($1.25/0.625=2$). The best circle is subsequently refined over its consensus by numerical minimisation of
+\begin{equation}
+ J(c_x,c_y,r)=\sum_{i\in\mathcal I_{\rm circle}}\bigl(\|\mathbf{x}_i-\mathbf{c}\|_2-r\bigr)^2,
+\end{equation}
+followed by inlier reassignment and one further refinement. This is different from fitting a circle directly to all 100 points: only the selected consensus contributes to the final geometric fit.
+
+\subsection{(c) Results, samples and fitted models}
+\begin{figure}[H]\centering
+\includegraphics[width=0.83\linewidth]{\assets q2_ransac.png}
+\caption{Reproduced plot of all 100 points, the best minimal line and circle samples, corresponding sample models, final refined models, model inliers and ground-truth line/circle.}
 \end{figure}
 
-\textbf{Destination quadrilaterals (TL, TR, BR, BL)}
-\begin{center}
-\small
-\begin{tabularx}{0.96\textwidth}{@{}l X X@{}}
-\toprule
-Setting & Example 1: flag & Example 2: poster\\
-\midrule
+\begin{table}[H]\centering
+\caption{Numerical results reproduced by executing \texttt{q2\_ransac\_fitting.py --seed 0}.}
+\begin{tabular}{@{}p{0.37\linewidth}ll@{}}\toprule
+Quantity & True model & Estimated model\\\midrule
+Line unit normal $[a,b]$ & $[0.707107,0.707107]$ & $[0.715649,0.698460]$\\
+Line normal $2$-norm & $1$ & $1.000000$\\
+Normal-form offset $d$ & $1.414214$ & $1.561775$\\
+Line slope $m$ & $-1.000000$ & $-1.024609$\\
+Line intercept $b$ & $2.000000$ & $2.236025$\\
+Circle centre $(c_x,c_y)$ & $(2,3)$ & $(1.817367,3.089484)$\\
+Circle radius $r$ & $10$ & $9.888575$\\
+\bottomrule\end{tabular}
+\end{table}
+
+The detected line consensus is 56/100 points, comprising all 50 generated line points and six generated circle points lying within the line threshold. Removing those leaves 44 points. The final circle consensus has 42 points, all belonging to the generated circle class. Thus, two points remain unassigned after these two estimated consensuses. The circle centre error is
+$\|\widehat{\mathbf c}-\mathbf{c}_{\rm gt}\|_2\approx0.2034$ (\emph{not} $0.204$ at three-decimal rounding), and the absolute radius error is $|9.888575-10|\approx0.1114$. Using the known synthetic labels to evaluate class composition is legitimate here; an unknown real dataset would not provide that ground truth.
+
+\subsection{(d) What if the circle is fitted first?}
+The same code also executes the reverse sequence: fit the circle to all 100 noisy points, remove its consensus, and then fit the line to the remainder. This experiment returns 57 circle-consensus points (48 genuine circle points \emph{and nine line points}). It leaves 43 points, from which the subsequent line fit selects 41 genuine line points. Hence the first-estimated structure can claim nearby observations generated by the other structure.
+
+Sequential fitting is therefore order dependent. This example does \emph{not} prove that a line-first order is always better: model support, intersection geometry, noise, error thresholds, and sampling seeds all matter. Simultaneous multi-model fitting, post-hoc reassignment, or iterative refinement could reduce order bias. For this dataset, the stated line-first processing agrees with the assignment and produces a good approximation of both ground-truth models.
+
+\section{Question 3: Four-point homography and perspective compositing}
+\subsection{Projective geometry and procedure}
+For a point on a planar overlay, the homography maps homogeneous source pixel coordinates $\mathbf{x}=(x,y,1)^{\mathsf T}$ to destination coordinates $\mathbf{x}'\sim H\mathbf{x}$, where
+\begin{equation}
+H=\begin{bmatrix}h_{11}&h_{12}&h_{13}\\h_{21}&h_{22}&h_{23}\\h_{31}&h_{32}&h_{33}\end{bmatrix},\quad
+x'=\frac{h_{11}x+h_{12}y+h_{13}}{h_{31}x+h_{32}y+h_{33}},\quad
+y'=\frac{h_{21}x+h_{22}y+h_{23}}{h_{31}x+h_{32}y+h_{33}}.
+\end{equation}
+Four ordered correspondences, provided that the configuration is non-degenerate, are sufficient to determine the eight independent degrees of freedom of $H$ up to a nonzero scale. The code supplies the full overlay image corners in the order top-left, top-right, bottom-right, bottom-left and four destination points in the same cyclic order, calls \texttt{cv2.getPerspectiveTransform}, and warps using \texttt{cv2.warpPerspective}. A similarly warped binary mask restricts alpha blending to the polygon region:
+\begin{equation}
+I_{\rm result}(x,y)=\alpha I_{\rm warped}(x,y)+(1-\alpha)I_{\rm background}(x,y),\qquad (x,y)\in\Omega,
+\end{equation}
+while pixels outside the valid warped mask $\Omega$ remain unchanged. The tested alpha value is $\alpha=0.97$.
+
+\subsection{Reported experiments}
+\begin{figure}[H]\centering
+\begin{subfigure}[t]{0.49\textwidth}\centering
+\includegraphics[width=\linewidth]{\assets q3_flag.png}
+\caption{Union Jack over the Wadham College facade.}
+\end{subfigure}\hfill
+\begin{subfigure}[t]{0.49\textwidth}\centering
+\includegraphics[width=\linewidth]{\assets q3_poster.png}
+\caption{Sunflower photograph placed on the same facade.}
+\end{subfigure}
+\end{figure}
+
+\begin{table}[H]\centering\small
+\caption{Source/destination choices and alpha for the two reported examples. Coordinates follow TL, TR, BR, BL order.}
+\begin{tabularx}{\linewidth}{@{}lXX@{}}\toprule
+Field & Example 1 & Example 2\\\midrule
 Background & \texttt{wadham.jpg} & \texttt{wadham.jpg}\\
-Overlay & \texttt{flag.png} & sunflower field photo\\
-Coordinates & $(220,250),(480,277),(474,410),(215,394)$ & $(72,295),(185,303),(181,382),(69,374)$\\
-Blend $\alpha$ & $0.97$ & $0.97$\\
-\bottomrule
-\end{tabularx}
-\end{center}
+Overlay & \texttt{flag.png} & Sunflower-field photograph\\
+Destination points & $(220,250),(480,277),(474,410),(215,394)$ & $(72,295),(185,303),(181,382),(69,374)$\\
+Blend parameter & $\alpha=0.97$ & $\alpha=0.97$\\
+\bottomrule\end{tabularx}
+\end{table}
 
-\textbf{Rationale and discussion.} A flag is a recognisable graphic for a large facade area, whereas the sunflower photograph demonstrates a smaller poster. The projected corners follow each selected quadrilateral, and the validity mask preserves the rest of the architecture. Correct point order is crucial; misordered corners can rotate, flip or twist the overlay. A single homography models one plane, so it cannot accurately handle protruding objects or a target surface with substantial depth variation. The interactive script also permits selecting four new corners for other image pairs.
+\subsection{Assessment and required improvement}
+The outputs visibly demonstrate planar image warping, the importance of consistent corner ordering, and masked compositing. The approach assumes the selected target surface is planar and thus cannot model depth changes, occluding components or local parallax. A red one-pixel outline is added in the provided code \emph{after} compositing; it is useful for checking target geometry but should be turned off in a photorealistic final composite.
 
-% PAGE 4 -------------------------------------------------------------------
-\newpage
-\section*{4. SIFT PCB alignment and difference images}
-The reference is \texttt{AECC1.jpg}. SIFT keypoints/descriptors are matched by \texttt{cv2.BFMatcher} using the L2 metric. Lowe's ratio test ($0.75$) removes ambiguous pairs; RANSAC estimates a homography with a $5$ px reprojection threshold. Each test PCB is warped to the template dimensions. The absolute grayscale difference is computed only in the valid warped overlap, excluding uncovered black borders from its statistics.
+\section{Question 4: SIFT-based PCB alignment and difference analysis}
+\subsection{Feature detection, matching and geometric alignment}
+The template is \texttt{AECC1.jpg}; the test images are \texttt{AAAA1}, \texttt{ADAD1}, \texttt{AECC2}, \texttt{AECC3} and \texttt{AECC4}. In each pair, the code (i) computes SIFT keypoints and 128-element descriptors for the test image and template, (ii) obtains nearest-neighbour matches using \texttt{cv2.BFMatcher(cv2.NORM\_L2)}, (iii) retains matches satisfying Lowe's ratio test with threshold 0.75, and (iv) estimates $H$ from test-board coordinates to template coordinates using \texttt{cv2.findHomography(..., cv2.RANSAC, 5.0)} with a five-pixel reprojection threshold. The given image is then warped to the template's pixel dimensions.
 
-\begin{minipage}[t]{0.43\textwidth}
-\vspace{0pt}
-\includegraphics[width=\linewidth]{report_assets/q4_matches.jpg}
-\captionof{figure}{Example SIFT inlier matches: AECC2 to AECC1.}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.54\textwidth}
-\vspace{0pt}
-\textbf{Alignment and grayscale difference metrics}\par
-\scriptsize
-\begin{tabularx}{\linewidth}{@{}l r r r r@{}}
-\toprule
-Image & Matches & Inliers & Mean $|\Delta|$ & 95th pct.\\
-\midrule
-\QFourMetricRows
-\bottomrule
-\end{tabularx}
-\end{minipage}
+The script also warps a full-image validity mask. Pixels with no corresponding warped input are excluded from its reported difference statistics; the code does \emph{not} isolate the PCB itself from its surrounding photograph. Thus a fairer comparison among test images would additionally use a common board-region mask and report the fraction of the template actually covered.
 
-\vspace{1pt}
-\textbf{Difference heatmaps} (all test images; brighter/hotter regions indicate larger local differences)
+\subsection{Exactly what difference measure is reported?}
+This distinction matters because the original report's label \emph{``absolute grayscale difference''} is not quite correct. The supplied Python computes
+\begin{lstlisting}[language=Python]
+diff = cv2.absdiff(template, aligned)  # absolute B/G/R channel differences
+diff_gray = cv2.cvtColor(diff, cv2.COLOR_BGR2GRAY)
+diff_gray[~valid] = 0
+\end{lstlisting}
+For a BGR image this corresponds approximately to the \emph{grayscale-weighted sum of absolute channel differences}
+\begin{equation}
+ D_{\rm code}=0.114|B_t-B_a|+0.587|G_t-G_a|+0.299|R_t-R_a|,
+\label{eq:actual_diff}
+\end{equation}
+not, in general, $\left|0.114(B_t-B_a)+0.587(G_t-G_a)+0.299(R_t-R_a)\right|$. Both are reasonable photometric comparison measures, but the report must name the one the code actually uses. To calculate a conventional absolute grayscale-image difference instead, use:
+\begin{lstlisting}[language=Python]
+t_gray = cv2.cvtColor(template, cv2.COLOR_BGR2GRAY)
+a_gray = cv2.cvtColor(aligned, cv2.COLOR_BGR2GRAY)
+diff_gray = cv2.absdiff(t_gray, a_gray)
+diff_gray[~valid] = 0
+\end{lstlisting}
+\textbf{Do not reuse the following numerical measurements after making this code change}; rerun the original images and regenerate the table. In this reviewed edition, all numerical measurements are preserved from the actual implemented metric in Eq.\,(\ref{eq:actual_diff}).
 
-\begin{center}
-\begin{minipage}[t]{0.32\textwidth}\centering
-\includegraphics[height=1.38in,keepaspectratio]{report_assets/q4_heat_1.png}\\[-2pt]
-{\scriptsize AAAA1}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.32\textwidth}\centering
-\includegraphics[height=1.38in,keepaspectratio]{report_assets/q4_heat_2.png}\\[-2pt]
-{\scriptsize ADAD1}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.32\textwidth}\centering
-\includegraphics[height=1.38in,keepaspectratio]{report_assets/q4_heat_3.png}\\[-2pt]
-{\scriptsize AECC2}
-\end{minipage}
+\subsection{Reported matching and differencing results}
+\begin{table}[H]\centering\small
+\caption{Values are in pixel-intensity units on $[0,255]$.}
+\begin{tabular}{@{}lrrrrr@{}}\toprule
+Image & Ratio matches & RANSAC inliers & Inlier rate & Mean $D_{\rm code}$ & 95th percentile\\\midrule
+AAAA1 & 51 & 18 & $35.3\%$ & 28.8 & 107\\
+ADAD1 & 369 & 194 & $52.6\%$ & 31.2 & 92\\
+AECC2 & 4322 & 3847 & $89.0\%$ & 3.5 & 9\\
+AECC3 & 5629 & 5006 & $88.9\%$ & 3.2 & 8\\
+AECC4 & 3830 & 3402 & $88.8\%$ & 4.0 & 10\\
+\bottomrule\end{tabular}
+\end{table}
 
-\vspace{3pt}
-\makebox[\textwidth][c]{%
-\begin{minipage}[t]{0.32\textwidth}\centering
-\includegraphics[height=1.38in,keepaspectratio]{report_assets/q4_heat_4.png}\\[-2pt]
-{\scriptsize AECC3}
-\end{minipage}\hspace{0.04\textwidth}%
-\begin{minipage}[t]{0.32\textwidth}\centering
-\includegraphics[height=1.38in,keepaspectratio]{report_assets/q4_heat_5.png}\\[-2pt]
-{\scriptsize AECC4}
-\end{minipage}}
-\end{center}
+\begin{figure}[H]\centering
+\includegraphics[width=0.76\linewidth]{\assets q4_matches.jpg}
+\caption{Reported SIFT/RANSAC inlier-match visualization for AECC2 versus the AECC1 template. Only one match figure is present in the original report; figures for other test images can strengthen part (b).}
+\end{figure}
 
-\textbf{Interpretation.} \QFourHighDiffImages\ have substantially larger mean differences than AECC2--AECC4, whose mean differences are approximately $3$--$4$ grayscale levels. A high difference around a USB Type-B port, capacitors or the reset button can be caused by changed/missing components, small position or shape changes, illumination, resampling after warping, or residual registration error. A homography corrects global planar perspective but cannot remove genuine board/component differences or local parallax. Thus the difference map is a comparison aid, not by itself proof of a manufacturing fault.
+\begin{figure}[H]\centering
+\begin{subfigure}[t]{0.31\textwidth}\centering\includegraphics[width=\linewidth,height=2.35in,keepaspectratio]{\assets q4_heat_1.png}\caption{AAAA1}\end{subfigure}\hfill
+\begin{subfigure}[t]{0.31\textwidth}\centering\includegraphics[width=\linewidth,height=2.35in,keepaspectratio]{\assets q4_heat_2.png}\caption{ADAD1}\end{subfigure}\hfill
+\begin{subfigure}[t]{0.31\textwidth}\centering\includegraphics[width=\linewidth,height=2.35in,keepaspectratio]{\assets q4_heat_3.png}\caption{AECC2}\end{subfigure}\\[12pt]
+\begin{subfigure}[t]{0.31\textwidth}\centering\includegraphics[width=\linewidth,height=2.35in,keepaspectratio]{\assets q4_heat_4.png}\caption{AECC3}\end{subfigure}\hspace{0.02\textwidth}
+\begin{subfigure}[t]{0.31\textwidth}\centering\includegraphics[width=\linewidth,height=2.35in,keepaspectratio]{\assets q4_heat_5.png}\caption{AECC4}\end{subfigure}
+\caption{Difference heatmaps for each test image.}
+\end{figure}
+
+\subsection{Discussion of individual test images}
+\textbf{AECC2--AECC4:} Their high RANSAC-inlier fractions (about 89\%) and much smaller reported mean differences (3.2--4.0 units) are consistent with comparatively good geometric and photometric agreement with AECC1 over the measured regions. Small residual differences can arise from changes in lighting and colour, small positional offsets, interpolation during \texttt{warpPerspective}, noise, and physically varying components.
+
+\textbf{AAAA1 and ADAD1:} Their lower inlier fractions (35.3\% and 52.6\%) and markedly higher mean differences (28.8 and 31.2) show that they are substantially less similar to the template under this procedure. Such differences could reflect a different PCB revision or component placement, weaker geometric registration, or capture/illumination differences. In particular, 18 inliers for AAAA1 is a relatively small geometric support set, so its transformation should be inspected for plausibility before interpreting bright areas as true hardware changes.
+
+\textbf{Why do USB Type-B connectors, capacitors and reset buttons show high differences?} A homography models a single plane, approximately the board surface. Tall parts sit above that plane; viewing-angle differences create parallax, leaving those parts locally misregistered after the board plane is aligned. Connector and capacitor geometry may genuinely vary between boards or revisions; highlights and shadows from raised components are also illumination-sensitive. Therefore, high local error can represent real hardware differences \emph{or} unavoidable geometric/photometric mismatch, not automatically defects.
+
+\subsection{How to improve the reliability of the experiment}
+For each of the five test boards, add a three-column figure showing \emph{template}, \emph{aligned test image}, and \emph{difference}, with a separate close-up of a suspected component. Include the inlier-match panel, the estimated overlap percentage, and a consistent shared intensity scale for heatmaps. The current code draws only the 75 lowest-distance inlier matches in its preview, even when there are thousands of matches. For quantitative board-to-board comparison, use a PCB region-of-interest mask so background colours do not dominate the mean, and consider photometric normalisation before differencing. These are recommended further experiments; their results are not claimed in this report.
 
 \end{document}

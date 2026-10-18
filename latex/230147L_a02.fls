@@ -4,9 +4,10 @@ INPUT c:\Users\dilha\Desktop\Fitting-and-Alignment\latex\230147L_a02.tex
 OUTPUT 230147L_a02.log
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
-INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
-INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
-INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Program Files\MiKTeX\tex\latex\base\size11.clo
+INPUT C:\Program Files\MiKTeX\tex\latex\base\size11.clo
+INPUT C:\Program Files\MiKTeX\tex\latex\base\size11.clo
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Program Files\MiKTeX\tex\latex\geometry\geometry.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\geometry\geometry.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
@@ -20,7 +21,7 @@ INPUT C:\Program Files\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty
-INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1000.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\ecrm1095.tfm
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\lmodern.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\lmodern.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
@@ -35,14 +36,6 @@ INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\booktabs\booktabs.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\booktabs\booktabs.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\tools\tabularx.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\tools\tabularx.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\tools\array.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\tools\array.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty
@@ -57,22 +50,20 @@ INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amsfonts.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amsfonts.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\enumitem\enumitem.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\enumitem\enumitem.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\tabularx.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\tabularx.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\setspace\setspace.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\titlesec\titlesec.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\titlesec\titlesec.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\color.cfg
@@ -117,6 +108,8 @@ INPUT C:\Program Files\MiKTeX\tex\generic\intcalc\intcalc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\puenc.def
 INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\puenc.def
 INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\bitset\bitset.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\bitset\bitset.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
@@ -128,102 +121,16 @@ INPUT C:\Program Files\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
 INPUT C:\Program Files\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\utilities\pgfrcs.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\utilities\pgfrcs.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfutil-common.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfutil-latex.def
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfrcs.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfrcs.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfrcs.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\pgf.revision.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\pgf.revision.tex
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\basiclayer\pgfcore.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\basiclayer\pgfcore.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\systemlayer\pgfsys.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\systemlayer\pgfsys.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsys.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsys.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsys.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfkeyslibraryfiltered.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgf.cfg
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcore.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcore.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcore.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathutil.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathparser.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.trigonometric.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.random.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.comparison.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.base.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.round.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.integerarithmetics.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathcalc.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfloat.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfint.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransformations.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorequick.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathprocessing.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransparency.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorerdf.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\modules\pgfmoduleshapes.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\modules\pgfmoduleplot.code.tex
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\utilities\pgffor.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\utilities\pgffor.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\utilities\pgfkeys.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\utilities\pgfkeys.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\math\pgfmath.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\pgf\math\pgfmath.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgffor.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgffor.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgffor.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\modules\pgfmodulematrix.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.code.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.code.tex
+INPUT C:\Program Files\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\lastpage\lastpage.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\lastpage\lastpage.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\lastpage\lastpage2e.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\lastpage\lastpage2e.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\lastpage\lastpagemodern.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\lastpage\lastpagemodern.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\enumitem\enumitem.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\enumitem\enumitem.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\listings\listings.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\listings\listings.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstpatch.sty
@@ -235,9 +142,14 @@ INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstmisc.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\listings\listings.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\listings\listings.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\listings\listings.cfg
-INPUT .\report_data.tex
-INPUT .\report_data.tex
-INPUT report_data.tex
+INPUT C:\Program Files\MiKTeX\tex\latex\microtype\microtype.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\microtype\microtype.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\microtype\microtype-pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\microtype\microtype-pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\microtype\microtype-pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\microtype\microtype.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\microtype\microtype.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\microtype\microtype.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmr.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmr.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmr.fd
@@ -261,39 +173,39 @@ INPUT .\230147L_a02.out
 INPUT .\230147L_a02.out
 INPUT 230147L_a02.out
 INPUT 230147L_a02.out
+OUTPUT 230147L_a02.pdf
 INPUT .\230147L_a02.out
 INPUT .\230147L_a02.out
 OUTPUT 230147L_a02.out
-OUTPUT 230147L_a02.pdf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\microtype\mt-cmr.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\microtype\mt-cmr.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\microtype\mt-cmr.cfg
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr9.tfm
-INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmtt.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmtt.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmtt.fd
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmtt9.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmtt10.tfm
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\ot1lmr.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\ot1lmr.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\ot1lmr.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr6.tfm
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\omllmm.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\omllmm.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\omllmm.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi6.tfm
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\omslmsy.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\omslmsy.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\omslmsy.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy6.tfm
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\omxlmex.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\omxlmex.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\lm\omxlmex.fd
@@ -302,106 +214,140 @@ INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\microtype\mt-msa.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\microtype\mt-msa.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\microtype\mt-msa.cfg
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\microtype\mt-msb.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\microtype\mt-msb.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\microtype\mt-msb.cfg
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmri10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT .\report_assets\q1_sunflower.jpg
-INPUT .\report_assets\q1_sunflower.jpg
-INPUT .\report_assets\q1_sunflower.jpg
-INPUT .\report_assets\q1_sunflower.jpg
-INPUT .\report_assets\q1_sunflower.jpg
-INPUT .\report_assets\q1_sunflower.jpg
-INPUT .\report_assets\q1_sunflower.jpg
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr8.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx8.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx9.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr9.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmr6.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi9.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmmi6.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy9.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\lmsy6.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmtt8.tfm
 INPUT C:\Users\dilha\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
-INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
+INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
-INPUT .\report_assets\q2_ransac.png
-INPUT .\report_assets\q2_ransac.png
-INPUT .\report_assets\q2_ransac.png
-INPUT .\report_assets\q2_ransac.png
-INPUT .\report_assets\q2_ransac.png
-INPUT .\report_assets\q2_ransac.png
-INPUT .\report_assets\q2_ransac.png
-INPUT .\report_assets\q3_flag.png
-INPUT .\report_assets\q3_flag.png
-INPUT .\report_assets\q3_flag.png
-INPUT .\report_assets\q3_flag.png
-INPUT .\report_assets\q3_flag.png
-INPUT .\report_assets\q3_flag.png
-INPUT .\report_assets\q3_flag.png
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx7.tfm
-INPUT .\report_assets\q3_poster.png
-INPUT .\report_assets\q3_poster.png
-INPUT .\report_assets\q3_poster.png
-INPUT .\report_assets\q3_poster.png
-INPUT .\report_assets\q3_poster.png
-INPUT .\report_assets\q3_poster.png
-INPUT .\report_assets\q3_poster.png
-INPUT .\report_assets\q4_matches.jpg
-INPUT .\report_assets\q4_matches.jpg
-INPUT .\report_assets\q4_matches.jpg
-INPUT .\report_assets\q4_matches.jpg
-INPUT .\report_assets\q4_matches.jpg
-INPUT .\report_assets\q4_matches.jpg
-INPUT .\report_assets\q4_matches.jpg
-INPUT .\report_assets\q4_heat_1.png
-INPUT .\report_assets\q4_heat_1.png
-INPUT .\report_assets\q4_heat_1.png
-INPUT .\report_assets\q4_heat_1.png
-INPUT .\report_assets\q4_heat_1.png
-INPUT .\report_assets\q4_heat_1.png
-INPUT .\report_assets\q4_heat_1.png
-INPUT .\report_assets\q4_heat_2.png
-INPUT .\report_assets\q4_heat_2.png
-INPUT .\report_assets\q4_heat_2.png
-INPUT .\report_assets\q4_heat_2.png
-INPUT .\report_assets\q4_heat_2.png
-INPUT .\report_assets\q4_heat_2.png
-INPUT .\report_assets\q4_heat_2.png
-INPUT .\report_assets\q4_heat_3.png
-INPUT .\report_assets\q4_heat_3.png
-INPUT .\report_assets\q4_heat_3.png
-INPUT .\report_assets\q4_heat_3.png
-INPUT .\report_assets\q4_heat_3.png
-INPUT .\report_assets\q4_heat_3.png
-INPUT .\report_assets\q4_heat_3.png
-INPUT .\report_assets\q4_heat_4.png
-INPUT .\report_assets\q4_heat_4.png
-INPUT .\report_assets\q4_heat_4.png
-INPUT .\report_assets\q4_heat_4.png
-INPUT .\report_assets\q4_heat_4.png
-INPUT .\report_assets\q4_heat_4.png
-INPUT .\report_assets\q4_heat_4.png
-INPUT .\report_assets\q4_heat_5.png
-INPUT .\report_assets\q4_heat_5.png
-INPUT .\report_assets\q4_heat_5.png
-INPUT .\report_assets\q4_heat_5.png
-INPUT .\report_assets\q4_heat_5.png
-INPUT .\report_assets\q4_heat_5.png
-INPUT .\report_assets\q4_heat_5.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q1_sunflower.jpg
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q1_sunflower.jpg
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q1_sunflower.jpg
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q1_sunflower.jpg
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q1_sunflower.jpg
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q1_sunflower.jpg
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q1_sunflower.jpg
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx6.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\ot1lmss.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\ot1lmss.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\lm\ot1lmss.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmss10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmss8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmss8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmbx5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmss10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmss8.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\rm-lmss8.tfm
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q2_ransac.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q2_ransac.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q2_ransac.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q2_ransac.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q2_ransac.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q2_ransac.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q2_ransac.png
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmtt10.tfm
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q3_flag.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q3_flag.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q3_flag.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q3_flag.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q3_flag.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q3_flag.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q3_flag.png
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmr9.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmbx9.tfm
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q3_poster.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q3_poster.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q3_poster.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q3_poster.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q3_poster.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q3_poster.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q3_poster.png
+INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\lm\ec-lmtti10.tfm
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_matches.jpg
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_matches.jpg
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_matches.jpg
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_matches.jpg
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_matches.jpg
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_matches.jpg
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_matches.jpg
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_1.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_1.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_1.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_1.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_1.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_1.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_1.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_2.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_2.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_2.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_2.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_2.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_2.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_2.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_3.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_3.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_3.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_3.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_3.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_3.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_3.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_4.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_4.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_4.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_4.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_4.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_4.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_4.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_5.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_5.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_5.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_5.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_5.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_5.png
+INPUT C:\Users\dilha\Desktop\Fitting-and-Alignment\latex\report_assets\q4_heat_5.png
 INPUT 230147L_a02.aux
 INPUT .\230147L_a02.out
 INPUT .\230147L_a02.out
@@ -409,37 +355,35 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx7.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx7.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx8.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx9.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmbx9.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmex10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmex10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi7.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi7.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi9.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi9.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmmi8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr6.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr6.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr7.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr7.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr9.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmr9.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmri10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmri10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmss8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmss8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy7.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy7.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy9.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy9.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy8.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmsy8.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmtt10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmtt10.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmtt8.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmtt8.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmtt9.pfb
-INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmtt9.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmtti10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\lm\lmtti10.pfb
