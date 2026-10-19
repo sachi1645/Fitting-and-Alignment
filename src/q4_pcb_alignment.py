@@ -17,12 +17,58 @@ IMAGE_EXTS = {
 }
 
 
+def manual_homography_ransac(src_points: np.ndarray, dst_points: np.ndarray,
+                             threshold: float = 5.0, iterations: int = 2000,
+                             seed: int = 42):
+    """Educational four-point RANSAC for planar projective homographies.
+
+    This optional path follows the reference notebook's sampling approach,
+    but estimates/re-evaluates the inliers and refines H from consensus.
+    The default PCB workflow still uses cv2.findHomography(..., RANSAC).
+    """
+    src = np.asarray(src_points, np.float64).reshape(-1, 2)
+    dst = np.asarray(dst_points, np.float64).reshape(-1, 2)
+    if len(src) < 4 or len(dst) != len(src):
+        raise ValueError("Need >=4 paired SIFT matches")
+    rng = np.random.default_rng(seed)
+    best_mask = np.zeros(len(src), dtype=bool)
+    best_mse = float("inf")
+    best_H = None
+    for _ in range(iterations):
+        idx = rng.choice(len(src), 4, replace=False)
+        src4 = src[idx].astype(np.float32)
+        dst4 = dst[idx].astype(np.float32)
+        if abs(cv2.contourArea(src4)) < 2 or abs(cv2.contourArea(dst4)) < 2:
+            continue
+        H = cv2.getPerspectiveTransform(src4, dst4)
+        if not np.isfinite(H).all():
+            continue
+        proj_h = np.column_stack([src, np.ones(len(src))]) @ H.T
+        valid_z = np.abs(proj_h[:, 2]) > 1e-10
+        errors = np.full(len(src), np.inf)
+        errors[valid_z] = np.linalg.norm(
+            proj_h[valid_z, :2] / proj_h[valid_z, 2, None] - dst[valid_z], axis=1)
+        mask = errors <= threshold
+        count = int(mask.sum())
+        mse = float(np.mean(errors[mask] ** 2)) if count else np.inf
+        if count > best_mask.sum() or (count == best_mask.sum() and mse < best_mse):
+            best_H, best_mask, best_mse = H, mask, mse
+    if best_H is None or int(best_mask.sum()) < 4:
+        raise RuntimeError("Insufficient inliers for a homography")
+    H, _ = cv2.findHomography(src[best_mask], dst[best_mask], 0)
+    if H is None:
+        raise RuntimeError("Consensus homography refinement failed")
+    return H, best_mask.reshape(-1, 1).astype(np.uint8)
+
+
 def align_and_compare(
     template_path: Path,
     pcb_path: Path,
     output_dir: Path,
     ratio: float = 0.75,
     ransac_threshold: float = 5.0,
+    homography_method: str = "opencv",
+    sift_params: dict | None = None,
 ):
     """Align one PCB image to the template and compute differences."""
 
@@ -48,7 +94,7 @@ def align_and_compare(
     # Step 1: Detect SIFT features in both images.
     # -----------------------------------------------------
 
-    sift = cv2.SIFT_create()
+    sift = cv2.SIFT_create(**(sift_params or {}))
 
     template_gray = cv2.cvtColor(
         template, cv2.COLOR_BGR2GRAY
@@ -96,8 +142,8 @@ def align_and_compare(
 
     # Lowe's ratio test removes ambiguous feature matches.
     good = [
-        m for m, n in pairs
-        if m.distance < ratio * n.distance
+        pair[0] for pair in pairs if len(pair) == 2
+        and pair[0].distance < ratio * pair[1].distance
     ]
 
     if len(good) < 4:
@@ -122,12 +168,14 @@ def align_and_compare(
     # Step 3: Estimate the homography with RANSAC.
     # -----------------------------------------------------
 
-    H, inlier_mask = cv2.findHomography(
-        src_pts,
-        dst_pts,
-        cv2.RANSAC,
-        ransac_threshold,
-    )
+    if homography_method == "opencv":
+        H, inlier_mask = cv2.findHomography(
+            src_pts, dst_pts, cv2.RANSAC, ransac_threshold)
+    elif homography_method == "manual":
+        H, inlier_mask = manual_homography_ransac(
+            src_pts, dst_pts, threshold=ransac_threshold)
+    else:
+        raise ValueError("homography_method must be 'opencv' or 'manual'")
 
     if H is None or inlier_mask is None:
         raise RuntimeError(
@@ -185,13 +233,16 @@ def align_and_compare(
         aligned,
     )
 
-    diff_gray = cv2.cvtColor(
-        diff,
-        cv2.COLOR_BGR2GRAY,
-    )
+    # Correct grayscale difference: convert each input to grayscale first.
+    # Keep the old weighted-colour-difference metric for comparison with
+    # the user's previously generated report (these metrics differ).
+    diff_gray = cv2.absdiff(
+        template_gray, cv2.cvtColor(aligned, cv2.COLOR_BGR2GRAY))
+    legacy_weighted_abs_bgr = cv2.cvtColor(diff, cv2.COLOR_BGR2GRAY)
 
     # Exclude uncovered pixels from the difference analysis.
     diff_gray[~valid] = 0
+    legacy_weighted_abs_bgr[~valid] = 0
 
     # A colour heatmap makes larger differences easier to see.
     heat = cv2.applyColorMap(
@@ -341,6 +392,10 @@ def align_and_compare(
         "mean_abs_gray_difference": mean_diff,
         "median_abs_gray_difference": median_diff,
         "p95_abs_gray_difference": p95_diff,
+        "legacy_mean_weighted_abs_bgr_difference": (
+            float(legacy_weighted_abs_bgr[valid].mean()) if valid_count else float("nan")),
+        "homography_method": homography_method,
+        "valid_overlap_fraction": valid_count / float(th * tw),
     }
 
     print(metrics)
@@ -385,6 +440,10 @@ def main():
         help="RANSAC reprojection threshold in pixels",
     )
 
+    parser.add_argument("--homography-method", choices=("opencv", "manual"),
+                        default="opencv", help="OpenCV RANSAC or educational manual RANSAC")
+    parser.add_argument("--sift-custom", action="store_true",
+                        help="Use SIFT settings from the uploaded example notebook")
     args = parser.parse_args()
 
     template_path = Path(args.template)
@@ -435,6 +494,10 @@ def main():
                 out,
                 args.ratio,
                 args.ransac_threshold,
+                homography_method=args.homography_method,
+                sift_params=({"nOctaveLayers": 3, "contrastThreshold": 0.09,
+                              "edgeThreshold": 25, "sigma": 1.0}
+                             if args.sift_custom else None),
             )
 
             results.append(result)

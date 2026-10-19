@@ -13,6 +13,35 @@ import numpy as np
 from scipy.ndimage import gaussian_laplace, maximum_filter
 
 
+def manual_log_kernel(sigma: float) -> np.ndarray:
+    """Construct a finite, scale-normalized Laplacian-of-Gaussian kernel.
+
+    Equivalent in concept to the hand-built kernels in the supplied reference
+    notebook, but normalized and mean-corrected before convolution.
+    """
+    if sigma <= 0:
+        raise ValueError("sigma must be positive")
+    half_width = max(2, int(np.ceil(3.0 * sigma)))
+    yy, xx = np.mgrid[-half_width:half_width+1, -half_width:half_width+1]
+    radius_sq = xx.astype(float)**2 + yy.astype(float)**2
+    kernel = ((radius_sq / (2 * sigma**2) - 1) *
+              np.exp(-radius_sq / (2 * sigma**2)) / (np.pi * sigma**4))
+    kernel *= sigma**2
+    # Remove the small numerical DC response introduced by truncation.
+    kernel -= kernel.mean()
+    return kernel.astype(np.float32)
+
+
+def log_response(gray: np.ndarray, sigma: float, backend: str = "scipy") -> np.ndarray:
+    """Absolute, scale-normalized LoG magnitude using either implementation."""
+    if backend == "scipy":
+        return np.abs(sigma**2 * gaussian_laplace(gray, sigma=float(sigma), mode="reflect"))
+    if backend == "manual":
+        kernel = manual_log_kernel(float(sigma))
+        return np.abs(cv2.filter2D(gray, cv2.CV_32F, kernel, borderType=cv2.BORDER_REFLECT_101))
+    raise ValueError("backend must be 'scipy' or 'manual'")
+
+
 def detect_blobs(
     image_bgr: np.ndarray,
     sigma_min: float = 0.5,
@@ -21,6 +50,7 @@ def detect_blobs(
     threshold: float = 0.06,
     spatial_window: int = 7,
     roi_y_min: int = 180,
+    backend: str = "scipy",
 ):
     """Detect scale-space LoG extrema.
 
@@ -54,16 +84,9 @@ def detect_blobs(
         sigma_min, sigma_max, num_scales
     )
 
-    # Scale-normalized absolute Laplacian of Gaussian response.
+    # Scale-normalized absolute LoG responses, including a hand-built kernel option.
     stack = np.stack([
-        np.abs(
-            float(sigma) ** 2
-            * gaussian_laplace(
-                gray,
-                sigma=float(sigma),
-                mode="reflect",
-            )
-        )
+        log_response(gray, float(sigma), backend=backend)
         for sigma in sigmas
     ], axis=0)
 
@@ -307,6 +330,9 @@ def main() -> None:
         default=8.0,
     )
 
+    parser.add_argument("--log-backend", choices=("scipy", "manual"), default="scipy",
+                        help="Use SciPy LoG (default) or an explicitly constructed LoG kernel")
+
     args = parser.parse_args()
 
     # Load the supplied image.
@@ -338,6 +364,7 @@ def main() -> None:
         args.threshold,
         spatial_window=args.spatial_window,
         roi_y_min=args.roi_y_min,
+        backend=args.log_backend,
     )
 
     # Step 2: Reject some non-flower candidates.
@@ -425,6 +452,7 @@ def main() -> None:
     ).open("w", encoding="utf-8") as file:
 
         file.write(f"Image: {image_path}\n")
+        file.write(f"LoG backend: {args.log_backend}\n")
 
         file.write(
             "OpenCV read mode: IMREAD_REDUCED_COLOR_4\n"

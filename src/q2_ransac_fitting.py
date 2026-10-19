@@ -310,7 +310,7 @@ def optimize_circle(
     initial_center: np.ndarray,
     initial_radius: float
 ):
-    """Minimize the sum of squared radial residuals."""
+    """Minimize squared geometric radial residuals (not an algebraic circle fit)."""
 
     def objective(params):
 
@@ -347,7 +347,7 @@ def optimize_circle(
         }
     )
 
-    if not result.success and not np.isfinite(result.fun):
+    if not np.isfinite(result.fun) or not np.all(np.isfinite(result.x)):
         raise RuntimeError(
             f"Circle optimization failed: {result.message}"
         )

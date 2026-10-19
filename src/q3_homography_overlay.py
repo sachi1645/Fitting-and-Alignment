@@ -17,6 +17,7 @@ def composite(
     overlay: np.ndarray,
     dst_points,
     alpha: float = 1.0,
+    draw_outline: bool = False,
 ):
     """Warp an overlay rectangle to four destination points and blend it in."""
 
@@ -47,6 +48,10 @@ def composite(
     dst = np.asarray(
         dst_points, dtype=np.float32
     ).reshape(4, 2)
+
+    # Reject a degenerate/zero-area plane before computing H.
+    if not np.isfinite(dst).all() or abs(cv2.contourArea(dst)) < 1:
+        raise ValueError("The destination points must form a non-degenerate quadrilateral")
 
     # Estimate the projective transformation.
     H = cv2.getPerspectiveTransform(src, dst)
@@ -87,15 +92,10 @@ def composite(
         255,
     ).astype(np.uint8)
 
-    # Draw a thin red outline for visualising the target plane.
-    cv2.polylines(
-        out,
-        [dst.astype(np.int32)],
-        isClosed=True,
-        color=(0, 0, 255),
-        thickness=1,
-        lineType=cv2.LINE_AA,
-    )
+    # Outlines are for debugging only; they are not part of a realistic composite.
+    if draw_outline:
+        cv2.polylines(out, [dst.astype(np.int32)], isClosed=True,
+                      color=(0, 0, 255), thickness=2, lineType=cv2.LINE_AA)
 
     return out, H
 
@@ -194,6 +194,7 @@ def process_example(root: Path, item: dict):
         overlay,
         dst,
         float(item.get("alpha", 1.0)),
+        draw_outline=bool(item.get("draw_outline", False)),
     )
 
     output_path = root / item["output"]
@@ -259,10 +260,15 @@ def main():
         help="Overlay opacity between 0 and 1",
     )
 
+    parser.add_argument("--project-root", default=".",
+                        help="Root folder relative to which configured image paths are resolved")
+    parser.add_argument("--draw-outline", action="store_true",
+                        help="Mark the target quadrilateral for debugging")
+
     args = parser.parse_args()
 
     # The project root is the parent directory of src/.
-    root = Path(__file__).resolve().parents[1]
+    root = Path(args.project_root).expanduser().resolve()
 
     # Optional interactive mode for your own image pair.
     if args.interactive_background:
@@ -310,6 +316,7 @@ def main():
             overlay,
             dst,
             args.alpha,
+            draw_outline=args.draw_outline,
         )
 
         output_path = Path(args.output)

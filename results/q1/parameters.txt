@@ -1,4 +1,5 @@
 Image: images\the_berry_farms_sunflower_field.jpeg
+LoG backend: scipy
 OpenCV read mode: IMREAD_REDUCED_COLOR_4
 Reduced dimensions: 360 x 360
 Scale range: sigma in [0.5000, 8.0000] reduced-image pixels
